@@ -1,10 +1,6 @@
-#include <stdio.h>
- 
-int main()
+ #include <stdio.h>
+
+main()
 {
-  char string[] = "Hello World";
- 
-  printf("%s\n", string);
- 
-  return 0;
+  puts ("test");
 }
