@@ -1,7 +1,0 @@
-//Hej hampus	
-#incluse <stdio>
-
-int main(){
-puts("test!");
-return0;
-}
