@@ -1,6 +1,13 @@
- #include <stdio.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
-main()
+
+int main(int argc, char *argv[])
 {
-  puts ("valle");
+  printf("%s\n", argv[1]);
+  printf("%s\n", argv[2]);
+  printf("valle\n");
+  
+  return 0;
 }
