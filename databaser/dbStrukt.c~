@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+typedef struct node{
+  char *key;
+  char *value;
+  struct node *next;
+} *Node;
+
+
