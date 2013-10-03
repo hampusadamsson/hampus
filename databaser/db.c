@@ -37,7 +37,7 @@ int main(int argc, char *argv[]){
     while(getchar() != '\n'); // Clear stdin
     //int found;
     // Node cursor;
-char buffer[128];
+    char buffer[128];
     switch(choice){
     case 1: //query
       queryDb(list, buffer);
@@ -48,7 +48,7 @@ char buffer[128];
       break;
 
     case 3: //insert
-      list = insertDb(list, buffer);
+      list = insertDb(list, buffer, buffer, 1);
       break;
 
     case 4: // Delete
