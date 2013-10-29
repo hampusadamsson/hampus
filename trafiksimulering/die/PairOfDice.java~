@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class PairOfDice {
+    private Die dice1;
+    private Die dice2;
+
+    public PairOfDice() {
+	dice1 = new Die();
+	dice2 = new Die();
+    }
+
+    public PairOfDice(int numberOfSides) {
+	dice1 = new Die(numberOfSides);
+	dice2 = new Die(numberOfSides);
+    }
+
+    public static void main(String [] args){
+	Scanner sc = new Scanner(System.in);
+	int numberOfSides = 0;
+	boolean sidesCheck = false;
+
+	while(!sidesCheck){
+	    System.out.print("Number of sides: ");
+	    numberOfSides = sc.nextInt();
+	    if(numberOfSides > 0) {sidesCheck = true;}
+	    else{
+		System.out.println("Try again!");
+	    }
+	}
+	PairOfDice dPair = new PairOfDice(numberOfSides);
+	dice1.roll();
+	dice2.roll();
+	System.out.println("Tärning 1: " + dice1.get());
+	System.out.println("Tärning 2: " + dice2.get());
+    }
+}

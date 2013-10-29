@@ -1,0 +1,9 @@
+public class dieGame {
+    public static void main(String[] args) {
+
+	PairOfDice pairOfDice1 = new PairOfDice();
+	PairOfDice pairOfDice2 = new PairOfDice();
+	
+	pairOfDice1.equals(pairOfDice2);
+    }
+}
